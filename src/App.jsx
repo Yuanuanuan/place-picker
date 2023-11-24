@@ -49,7 +49,7 @@ function App() {
     });
 
     const storedIds = JSON.parse(localStorage.getItem("selectedPlaces")) || [];
-    console.log(storedIds.indexOf(id));
+
     if (storedIds.indexOf(id) === -1) {
       localStorage.setItem(
         "selectedPlaces",
